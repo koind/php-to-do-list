@@ -12,7 +12,8 @@ function sql_Exec($sql)
 	$rel = mysql_query($sql);
 }
 
-function sql_Query($sql) {
+function sql_Query($sql)
+{
 	sql_Connect();
 	$rel = mysql_query($sql);
     $row = mysql_fetch_assoc($rel);
